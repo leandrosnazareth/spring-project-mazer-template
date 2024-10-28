@@ -3,108 +3,92 @@
         <ul class="menu">
             <li class="sidebar-title">Menu</li>
 
-            <li class="sidebar-item  ">
+            <li th:classappend="${activeMenu == 'dashboard'} ? 'active'" class="sidebar-item">
                 <a href="index" class='sidebar-link'>
                     <i class="bi bi-grid-fill"></i>
                     <span>Dashboard</span>
                 </a>
-
-
             </li>
 
-            <li class="sidebar-item active has-sub">
+            <li th:classappend="${activeMenu == 'components'} ? 'active'" class="sidebar-item has-sub">
                 <a href="#" class='sidebar-link'>
                     <i class="bi bi-stack"></i>
                     <span>Components</span>
                 </a>
 
-                <ul class="submenu active">
-
-                    <li class="submenu-item  ">
-                        <a href="component-accordion" class="submenu-link">Accordion</a>
-
-                    </li>
-
-                    <li class="submenu-item  ">
-                        <a href="component-alert" class="submenu-link">Alert</a>
-
-                    </li>
-
-                    <li class="submenu-item  ">
-                        <a href="component-badge" class="submenu-link">Badge</a>
-
-                    </li>
-
-                    <li class="submenu-item  ">
-                        <a href="component-breadcrumb" class="submenu-link">Breadcrumb</a>
-
-                    </li>
-
+                <ul class="submenu">
+                    
                     <li class="submenu-item active ">
+
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
+                        <a href="component-accordion" class="submenu-link">Accordion</a>
+                    </li>
+
+                    <li th:classappend="${activeItem == 'alert'} ? 'active'" class="submenu-item">
+                        <a href="component-alert" class="submenu-link">Alert</a>
+                    </li>
+
+                    <li th:classappend="${activeItem == 'badge'} ? 'active'" class="submenu-item">
+                        <a href="component-badge" class="submenu-link">Badge</a>
+                    </li>
+
+                    <li th:classappend="${activeItem == 'breadcrumb'} ? 'active'" class="submenu-item">
+                        <a href="component-breadcrumb" class="submenu-link">Breadcrumb</a>
+                    </li>
+
+                    <li th:classappend="${activeItem == 'button'} ? 'active'" class="submenu-item">
                         <a href="component-button" class="submenu-link">Button</a>
-
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'card'} ? 'active'" class="submenu-item">
                         <a href="component-card" class="submenu-link">Card</a>
-
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'carousel'} ? 'active'" class="submenu-item">
                         <a href="component-carousel" class="submenu-link">Carousel</a>
-
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'collapse'} ? 'active'" class="submenu-item">
                         <a href="component-collapse" class="submenu-link">Collapse</a>
 
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'dropdown'} ? 'active'" class="submenu-item">
                         <a href="component-dropdown" class="submenu-link">Dropdown</a>
-
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'list-group'} ? 'active'" class="submenu-item">
                         <a href="component-list-group" class="submenu-link">List Group</a>
-
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'modal'} ? 'active'" class="submenu-item">
                         <a href="component-modal" class="submenu-link">Modal</a>
-
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'navs'} ? 'active'" class="submenu-item">
                         <a href="component-navs" class="submenu-link">Navs</a>
-
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'pagination'} ? 'active'" class="submenu-item">
                         <a href="component-pagination" class="submenu-link">Pagination</a>
-
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'progress'} ? 'active'" class="submenu-item">
                         <a href="component-progress" class="submenu-link">Progress</a>
-
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'spinner'} ? 'active'" class="submenu-item">
                         <a href="component-spinner" class="submenu-link">Spinner</a>
-
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'toasts'} ? 'active'" class="submenu-item">
                         <a href="component-toasts" class="submenu-link">Toasts</a>
-
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'tooltip'} ? 'active'" class="submenu-item">
                         <a href="component-tooltip" class="submenu-link">Tooltip</a>
 
                     </li>
-
                 </ul>
 
 
@@ -118,39 +102,31 @@
 
                 <ul class="submenu ">
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="extra-component-avatar" class="submenu-link">Avatar</a>
-
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="extra-component-divider" class="submenu-link">Divider</a>
-
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="extra-component-date-picker" class="submenu-link">Date Picker</a>
-
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="extra-component-sweetalert" class="submenu-link">Sweet Alert</a>
 
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="extra-component-toastify" class="submenu-link">Toastify</a>
-
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="extra-component-rating" class="submenu-link">Rating</a>
-
                     </li>
-
                 </ul>
-
-
             </li>
 
             <li class="sidebar-item  has-sub">
@@ -161,27 +137,27 @@
 
                 <ul class="submenu ">
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="layout-default" class="submenu-link">Default Layout</a>
 
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="layout-vertical-1-column" class="submenu-link">1 Column</a>
 
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="layout-vertical-navbar" class="submenu-link">Vertical Navbar</a>
 
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="layout-rtl" class="submenu-link">RTL Layout</a>
 
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="layout-horizontal" class="submenu-link">Horizontal Menu</a>
 
                     </li>
@@ -201,32 +177,32 @@
 
                 <ul class="submenu ">
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="form-element-input" class="submenu-link">Input</a>
 
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="form-element-input-group" class="submenu-link">Input Group</a>
 
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="form-element-select" class="submenu-link">Select</a>
 
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="form-element-radio" class="submenu-link">Radio</a>
 
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="form-element-checkbox" class="submenu-link">Checkbox</a>
 
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="form-element-textarea" class="submenu-link">Textarea</a>
 
                     </li>
@@ -248,7 +224,7 @@
 
                 <ul class="submenu ">
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="form-validation-parsley" class="submenu-link">Parsley</a>
 
                     </li>
@@ -266,22 +242,22 @@
 
                 <ul class="submenu ">
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="form-editor-quill" class="submenu-link">Quill</a>
 
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="form-editor-ckeditor" class="submenu-link">CKEditor</a>
 
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="form-editor-summernote" class="submenu-link">Summernote</a>
 
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="form-editor-tinymce" class="submenu-link">TinyMCE</a>
 
                     </li>
@@ -308,12 +284,12 @@
 
                 <ul class="submenu ">
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="table-datatable" class="submenu-link">Datatable</a>
 
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="table-datatable-jquery" class="submenu-link">Datatable (jQuery)</a>
 
                     </li>
@@ -333,17 +309,17 @@
 
                 <ul class="submenu ">
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="ui-widgets-chatbox" class="submenu-link">Chatbox</a>
 
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="ui-widgets-pricing" class="submenu-link">Pricing</a>
 
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="ui-widgets-todolist" class="submenu-link">To-do List</a>
 
                     </li>
@@ -361,17 +337,17 @@
 
                 <ul class="submenu ">
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="ui-icons-bootstrap-icons" class="submenu-link">Bootstrap Icons </a>
 
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="ui-icons-fontawesome" class="submenu-link">Fontawesome</a>
 
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="ui-icons-dripicons" class="submenu-link">Dripicons</a>
 
                     </li>
@@ -389,12 +365,12 @@
 
                 <ul class="submenu ">
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="ui-chart-chartjs" class="submenu-link">ChartJS</a>
 
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="ui-chart-apexcharts" class="submenu-link">Apexcharts</a>
 
                     </li>
@@ -421,12 +397,12 @@
 
                 <ul class="submenu ">
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="ui-map-google-map" class="submenu-link">Google Map</a>
 
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="ui-map-jsvectormap" class="submenu-link">JS Vector Map</a>
 
                     </li>
@@ -529,17 +505,17 @@
 
                 <ul class="submenu ">
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="auth-login" class="submenu-link">Login</a>
 
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="auth-register" class="submenu-link">Register</a>
 
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="auth-forgot-password" class="submenu-link">Forgot Password</a>
 
                     </li>
@@ -557,17 +533,17 @@
 
                 <ul class="submenu ">
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="error-403" class="submenu-link">403</a>
 
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="error-404" class="submenu-link">404</a>
 
                     </li>
 
-                    <li class="submenu-item  ">
+                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
                         <a href="error-500" class="submenu-link">500</a>
 
                     </li>

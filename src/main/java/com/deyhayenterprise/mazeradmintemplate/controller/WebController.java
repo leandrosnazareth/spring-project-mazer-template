@@ -15,6 +15,7 @@ public class WebController {
     @GetMapping(value = { "/", "/index", "/index.html" })
 	public String indexMain(Model model) {
 		log.info("web controller class paramaters as model");
+		model.addAttribute("activeMenu", "dashboard");
 
         return "index";
     }    	
@@ -70,87 +71,121 @@ public class WebController {
 	}
 
 	@GetMapping("/component-accordion")
-	public String componentAccordion() {
+	public String componentAccordion(Model model) {
+		model.addAttribute("activeMenu", "components");
+		model.addAttribute("activeItem", "accordion");
 		return "component-accordion";
 	}
 
 	@GetMapping("/component-alert")
-	public String componentAlert() {
+	public String componentAlert(Model model) {
+		model.addAttribute("activeMenu", "components");
+		model.addAttribute("activeItem", "alert");
 		return "component-alert";
 	}
 
 	@GetMapping("/component-badge")
-	public String componentBadge() {
+	public String componentBadge(Model model) {
+		model.addAttribute("activeMenu", "components");
+		model.addAttribute("activeItem", "badge");
 		return "component-badge";
 	}
 
 	@GetMapping("/component-breadcrumb")
-	public String componentBreadcrumb() {
+	public String componentBreadcrumb(Model model) {
+		model.addAttribute("activeMenu", "components");
+		model.addAttribute("activeItem", "breadcrumb");
 		return "component-breadcrumb";
 	}
 
 	@GetMapping("/component-button")
-	public String componentButton() {
+	public String componentButton(Model model) {
+		model.addAttribute("activeMenu", "components");
+		model.addAttribute("activeItem", "button");
 		return "component-button";
 	}
 
 	@GetMapping("/component-card")
-	public String componentCard() {
+	public String componentCard(Model model) {
+		model.addAttribute("activeMenu", "components");
+		model.addAttribute("activeItem", "card");
 		return "component-card";
 	}
 
 	@GetMapping("/component-carousel")
-	public String componentCarousel() {
+	public String componentCarousel(Model model) {
+		model.addAttribute("activeMenu", "components");
+		model.addAttribute("activeItem", "carousel");
 		return "component-carousel";
 	}
 
 	@GetMapping("/component-collapse")
-	public String componentCollapse() {
+	public String componentCollapse(Model model) {
+		model.addAttribute("activeMenu", "components");
+		model.addAttribute("activeItem", "collapse");
 		return "component-collapse";
 	}
 
 	@GetMapping("/component-dropdown")
-	public String componentDropdown() {
+	public String componentDropdown(Model model) {
+		model.addAttribute("activeMenu", "components");
+		model.addAttribute("activeItem", "dropdown");
 		return "component-dropdown";
 	}
 
 	@GetMapping("/component-list-group")
-	public String componentListGroup() {
+	public String componentListGroup(Model model) {
+		model.addAttribute("activeMenu", "components");
+		model.addAttribute("activeItem", "list-group");
 		return "component-list-group";
 	}
 
 	@GetMapping("/component-modal")
-	public String componentModal() {
+	public String componentModal(Model model) {
+		model.addAttribute("activeMenu", "components");
+		model.addAttribute("activeItem", "modal");
 		return "component-modal";
 	}
 
 	@GetMapping("/component-navs")
-	public String componentNavs() {
+	public String componentNavs(Model model) {
+		model.addAttribute("activeMenu", "components");
+		model.addAttribute("activeItem", "navs");
 		return "component-navs";
 	}
 
 	@GetMapping("/component-pagination")
-	public String componentPagination() {
+	public String componentPagination(Model model) {
+		model.addAttribute("activeMenu", "components");
+		model.addAttribute("activeItem", "pagination");
 		return "component-pagination";
 	}
 
 	@GetMapping("/component-progress")
-	public String componentProgress() {
+	public String componentProgress(Model model) {
+		model.addAttribute("activeMenu", "components");
+		model.addAttribute("activeItem", "alert");
 		return "component-progress";
 	}
 
 	@GetMapping("/component-spinner")
-	public String componentSpinner() {
+	public String componentSpinner(Model model) {
+		model.addAttribute("activeMenu", "components");
+		model.addAttribute("activeItem", "spinner");
 		return "component-spinner";
 	}
 
 	@GetMapping("/component-toasts")
-	public String componentToasts() {
+	public String componentToasts(Model model) {
+		model.addAttribute("activeMenu", "components");
+		model.addAttribute("activeItem", "toasts");
 		return "component-toasts";
 	}
 
 	@GetMapping("/component-tooltip")
-	public String componentTooltip() {
+	public String componentTooltip(Model model) {
+		model.addAttribute("activeMenu", "components");
+		model.addAttribute("activeItem", "tooltip");
 		return "component-tooltip";
 	}
 
