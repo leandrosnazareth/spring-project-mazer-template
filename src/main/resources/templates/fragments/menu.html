@@ -17,7 +17,7 @@
                 </a>
 
                 <ul class="submenu">
-                    
+
                     <li class="submenu-item active ">
 
                     <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
@@ -94,42 +94,40 @@
 
             </li>
 
-            <li class="sidebar-item  has-sub">
+            <li th:classappend="${activeMenu == 'extra'} ? 'active'" class="sidebar-item has-sub">
                 <a href="#" class='sidebar-link'>
                     <i class="bi bi-collection-fill"></i>
                     <span>Extra Components</span>
                 </a>
 
                 <ul class="submenu ">
-
-                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
+                    <li th:classappend="${activeItem == 'avatar'} ? 'active'" class="submenu-item">
                         <a href="extra-component-avatar" class="submenu-link">Avatar</a>
                     </li>
 
-                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
+                    <li th:classappend="${activeItem == 'divider'} ? 'active'" class="submenu-item">
                         <a href="extra-component-divider" class="submenu-link">Divider</a>
                     </li>
 
-                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
+                    <li th:classappend="${activeItem == 'date-picker'} ? 'active'" class="submenu-item">
                         <a href="extra-component-date-picker" class="submenu-link">Date Picker</a>
                     </li>
 
-                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
+                    <li th:classappend="${activeItem == 'sweetalert'} ? 'active'" class="submenu-item">
                         <a href="extra-component-sweetalert" class="submenu-link">Sweet Alert</a>
-
                     </li>
 
-                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
+                    <li th:classappend="${activeItem == 'toastify'} ? 'active'" class="submenu-item">
                         <a href="extra-component-toastify" class="submenu-link">Toastify</a>
                     </li>
 
-                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
+                    <li th:classappend="${activeItem == 'rating'} ? 'active'" class="submenu-item">
                         <a href="extra-component-rating" class="submenu-link">Rating</a>
                     </li>
                 </ul>
             </li>
 
-            <li class="sidebar-item  has-sub">
+            <li th:classappend="${activeMenu == 'layout'} ? 'active'" class="sidebar-item has-sub">
                 <a href="#" class='sidebar-link'>
                     <i class="bi bi-grid-1x2-fill"></i>
                     <span>Layouts</span>
@@ -137,27 +135,27 @@
 
                 <ul class="submenu ">
 
-                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
+                    <li th:classappend="${activeItem == 'default'} ? 'active'" class="submenu-item">
                         <a href="layout-default" class="submenu-link">Default Layout</a>
 
                     </li>
 
-                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
+                    <li th:classappend="${activeItem == 'vertical-1-column'} ? 'active'" class="submenu-item">
                         <a href="layout-vertical-1-column" class="submenu-link">1 Column</a>
 
                     </li>
 
-                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
+                    <li th:classappend="${activeItem == 'navbar'} ? 'active'" class="submenu-item">
                         <a href="layout-vertical-navbar" class="submenu-link">Vertical Navbar</a>
 
                     </li>
 
-                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
+                    <li th:classappend="${activeItem == 'rtl'} ? 'active'" class="submenu-item">
                         <a href="layout-rtl" class="submenu-link">RTL Layout</a>
 
                     </li>
 
-                    <li th:classappend="${activeItem == 'accordion'} ? 'active'" class="submenu-item">
+                    <li th:classappend="${activeItem == 'horizontal'} ? 'active'" class="submenu-item">
                         <a href="layout-horizontal" class="submenu-link">Horizontal Menu</a>
 
                     </li>

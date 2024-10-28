@@ -190,62 +190,86 @@ public class WebController {
 	}
 
 	@GetMapping("/extra-component-avatar")
-	public String extraComponentAvatar() {
+	public String extraComponentAvatar(Model model) {
+		model.addAttribute("activeMenu", "extra");
+		model.addAttribute("activeItem", "avatar");
 		return "extra-component-avatar";
 	}
 
 	@GetMapping("/extra-component-date-picker")
-	public String extraComponentDatePicker() {
+	public String extraComponentDatePicker(Model model) {
+		model.addAttribute("activeMenu", "extra");
+		model.addAttribute("activeItem", "date-picker");
 		return "extra-component-date-picker";
 	}
 
 	@GetMapping("/extra-component-divider")
-	public String extraComponentDivider() {
+	public String extraComponentDivider(Model model) {
+		model.addAttribute("activeMenu", "extra");
+		model.addAttribute("activeItem", "divider");
 		return "extra-component-divider";
 	}
 
 	@GetMapping("/extra-component-rating")
-	public String extraComponentRating() {
+	public String extraComponentRating(Model model) {
+		model.addAttribute("activeMenu", "extra");
+		model.addAttribute("activeItem", "rating");
 		return "extra-component-rating";
 	}
 
 	@GetMapping("/extra-component-sweetalert")
-	public String extraComponentSweetalert() {
+	public String extraComponentSweetalert(Model model) {
+		model.addAttribute("activeMenu", "extra");
+		model.addAttribute("activeItem", "sweetalert");
 		return "extra-component-sweetalert";
 	}
 
 	@GetMapping("/extra-component-toastify")
-	public String extraComponentToastify() {
+	public String extraComponentToastify(Model model) {
+		model.addAttribute("activeMenu", "extra");
+		model.addAttribute("activeItem", "toastify");
 		return "extra-component-toastify";
 	}
 
 	@GetMapping("/layout-default")
-	public String layoutDefault() {
+	public String layoutDefault(Model model) {
+		model.addAttribute("activeMenu", "layout");
+		model.addAttribute("activeItem", "default");
 		return "layout-default";
 	}
 
 	@GetMapping("/layout-horizontal")
-	public String layoutHorizontal() {
+	public String layoutHorizontal(Model model) {
+		model.addAttribute("activeMenu", "layout");
+		model.addAttribute("activeItem", "horizontal");
 		return "layout-horizontal";
 	}
 
 	@GetMapping("/layout-rtl")
-	public String layoutRtl() {
+	public String layoutRtl(Model model) {
+		model.addAttribute("activeMenu", "layout");
+		model.addAttribute("activeItem", "rtl");
 		return "layout-rtl";
 	}
 
 	@GetMapping("/layout-rtl-backup")
-	public String layoutRtlBackup() {
+	public String layoutRtlBackup(Model model) {
+		model.addAttribute("activeMenu", "layout");
+		model.addAttribute("activeItem", "rtl");
 		return "layout-rtl-backup";
 	}
 
 	@GetMapping("/layout-vertical-1-column")
-	public String layoutVertical1Column() {
+	public String layoutVertical1Column(Model model) {
+		model.addAttribute("activeMenu", "layout");
+		model.addAttribute("activeItem", "vertical-1-column");
 		return "layout-vertical-1-column";
 	}
 
 	@GetMapping("/layout-vertical-navbar")
-	public String layoutVerticalNavbar() {
+	public String layoutVerticalNavbar(Model model) {
+		model.addAttribute("activeMenu", "layout");
+		model.addAttribute("activeItem", "default");
 		return "layout-vertical-navbar";
 	}
 
