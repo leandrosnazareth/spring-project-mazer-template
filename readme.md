@@ -50,6 +50,16 @@ Docker related settings added,
 - docker-compose.yml added
 - spring-boot-docker-compose dependency added to pom.xml
 
+# Updates on 02-Nov-2024
+Java version updated to 17
+
+Spring Boot version updated to 3.3.3
+
+Implemented Fragments in HTML pages for better content organization, including sections for the menu, sidebar, header, and footer.
+Developed new routing methods in the WebController to optimize application navigation.
+Updated Spring Boot to version 3.3.3, ensuring enhancements in performance and security.
+Integrated the Thymeleaf theme with Spring Boot, providing a more seamless and consistent development experience.
+
 # TODO
 ~~Dockerfile design~~   
 
