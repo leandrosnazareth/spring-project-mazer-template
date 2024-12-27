@@ -3,6 +3,7 @@ package com.deyhayenterprise.mazeradmintemplate.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -15,7 +16,6 @@ public class WebController {
     @GetMapping(value = { "/", "/index", "/index.html" })
 	public String indexMain(Model model) {
 		log.info("web controller class paramaters as model");
-		model.addAttribute("activeMenu", "dashboard");
 
         return "index";
     }    	
@@ -71,205 +71,147 @@ public class WebController {
 	}
 
 	@GetMapping("/component-accordion")
-	public String componentAccordion(Model model) {
-		model.addAttribute("activeMenu", "components");
-		model.addAttribute("activeItem", "accordion");
+	public String componentAccordion() {
 		return "component-accordion";
 	}
 
 	@GetMapping("/component-alert")
-	public String componentAlert(Model model) {
-		model.addAttribute("activeMenu", "components");
-		model.addAttribute("activeItem", "alert");
+	public String componentAlert() {
 		return "component-alert";
 	}
 
 	@GetMapping("/component-badge")
-	public String componentBadge(Model model) {
-		model.addAttribute("activeMenu", "components");
-		model.addAttribute("activeItem", "badge");
+	public String componentBadge() {
 		return "component-badge";
 	}
 
 	@GetMapping("/component-breadcrumb")
-	public String componentBreadcrumb(Model model) {
-		model.addAttribute("activeMenu", "components");
-		model.addAttribute("activeItem", "breadcrumb");
+	public String componentBreadcrumb() {
 		return "component-breadcrumb";
 	}
 
 	@GetMapping("/component-button")
-	public String componentButton(Model model) {
-		model.addAttribute("activeMenu", "components");
-		model.addAttribute("activeItem", "button");
+	public String componentButton() {
 		return "component-button";
 	}
 
 	@GetMapping("/component-card")
-	public String componentCard(Model model) {
-		model.addAttribute("activeMenu", "components");
-		model.addAttribute("activeItem", "card");
+	public String componentCard() {
 		return "component-card";
 	}
 
 	@GetMapping("/component-carousel")
-	public String componentCarousel(Model model) {
-		model.addAttribute("activeMenu", "components");
-		model.addAttribute("activeItem", "carousel");
+	public String componentCarousel() {
 		return "component-carousel";
 	}
 
 	@GetMapping("/component-collapse")
-	public String componentCollapse(Model model) {
-		model.addAttribute("activeMenu", "components");
-		model.addAttribute("activeItem", "collapse");
+	public String componentCollapse() {
 		return "component-collapse";
 	}
 
 	@GetMapping("/component-dropdown")
-	public String componentDropdown(Model model) {
-		model.addAttribute("activeMenu", "components");
-		model.addAttribute("activeItem", "dropdown");
+	public String componentDropdown() {
 		return "component-dropdown";
 	}
 
 	@GetMapping("/component-list-group")
-	public String componentListGroup(Model model) {
-		model.addAttribute("activeMenu", "components");
-		model.addAttribute("activeItem", "list-group");
+	public String componentListGroup() {
 		return "component-list-group";
 	}
 
 	@GetMapping("/component-modal")
-	public String componentModal(Model model) {
-		model.addAttribute("activeMenu", "components");
-		model.addAttribute("activeItem", "modal");
+	public String componentModal() {
 		return "component-modal";
 	}
 
 	@GetMapping("/component-navs")
-	public String componentNavs(Model model) {
-		model.addAttribute("activeMenu", "components");
-		model.addAttribute("activeItem", "navs");
+	public String componentNavs() {
 		return "component-navs";
 	}
 
 	@GetMapping("/component-pagination")
-	public String componentPagination(Model model) {
-		model.addAttribute("activeMenu", "components");
-		model.addAttribute("activeItem", "pagination");
+	public String componentPagination() {
 		return "component-pagination";
 	}
 
 	@GetMapping("/component-progress")
-	public String componentProgress(Model model) {
-		model.addAttribute("activeMenu", "components");
-		model.addAttribute("activeItem", "alert");
+	public String componentProgress() {
 		return "component-progress";
 	}
 
 	@GetMapping("/component-spinner")
-	public String componentSpinner(Model model) {
-		model.addAttribute("activeMenu", "components");
-		model.addAttribute("activeItem", "spinner");
+	public String componentSpinner() {
 		return "component-spinner";
 	}
 
 	@GetMapping("/component-toasts")
-	public String componentToasts(Model model) {
-		model.addAttribute("activeMenu", "components");
-		model.addAttribute("activeItem", "toasts");
+	public String componentToasts() {
 		return "component-toasts";
 	}
 
 	@GetMapping("/component-tooltip")
-	public String componentTooltip(Model model) {
-		model.addAttribute("activeMenu", "components");
-		model.addAttribute("activeItem", "tooltip");
+	public String componentTooltip() {
 		return "component-tooltip";
 	}
 
 	@GetMapping("/extra-component-avatar")
-	public String extraComponentAvatar(Model model) {
-		model.addAttribute("activeMenu", "extra");
-		model.addAttribute("activeItem", "avatar");
+	public String extraComponentAvatar() {
 		return "extra-component-avatar";
 	}
 
 	@GetMapping("/extra-component-date-picker")
-	public String extraComponentDatePicker(Model model) {
-		model.addAttribute("activeMenu", "extra");
-		model.addAttribute("activeItem", "date-picker");
+	public String extraComponentDatePicker() {
 		return "extra-component-date-picker";
 	}
 
 	@GetMapping("/extra-component-divider")
-	public String extraComponentDivider(Model model) {
-		model.addAttribute("activeMenu", "extra");
-		model.addAttribute("activeItem", "divider");
+	public String extraComponentDivider() {
 		return "extra-component-divider";
 	}
 
 	@GetMapping("/extra-component-rating")
-	public String extraComponentRating(Model model) {
-		model.addAttribute("activeMenu", "extra");
-		model.addAttribute("activeItem", "rating");
+	public String extraComponentRating() {
 		return "extra-component-rating";
 	}
 
 	@GetMapping("/extra-component-sweetalert")
-	public String extraComponentSweetalert(Model model) {
-		model.addAttribute("activeMenu", "extra");
-		model.addAttribute("activeItem", "sweetalert");
+	public String extraComponentSweetalert() {
 		return "extra-component-sweetalert";
 	}
 
 	@GetMapping("/extra-component-toastify")
-	public String extraComponentToastify(Model model) {
-		model.addAttribute("activeMenu", "extra");
-		model.addAttribute("activeItem", "toastify");
+	public String extraComponentToastify() {
 		return "extra-component-toastify";
 	}
 
 	@GetMapping("/layout-default")
-	public String layoutDefault(Model model) {
-		model.addAttribute("activeMenu", "layout");
-		model.addAttribute("activeItem", "default");
+	public String layoutDefault() {
 		return "layout-default";
 	}
 
 	@GetMapping("/layout-horizontal")
-	public String layoutHorizontal(Model model) {
-		model.addAttribute("activeMenu", "layout");
-		model.addAttribute("activeItem", "horizontal");
+	public String layoutHorizontal() {
 		return "layout-horizontal";
 	}
 
 	@GetMapping("/layout-rtl")
-	public String layoutRtl(Model model) {
-		model.addAttribute("activeMenu", "layout");
-		model.addAttribute("activeItem", "rtl");
+	public String layoutRtl() {
 		return "layout-rtl";
 	}
 
 	@GetMapping("/layout-rtl-backup")
-	public String layoutRtlBackup(Model model) {
-		model.addAttribute("activeMenu", "layout");
-		model.addAttribute("activeItem", "rtl");
+	public String layoutRtlBackup() {
 		return "layout-rtl-backup";
 	}
 
 	@GetMapping("/layout-vertical-1-column")
-	public String layoutVertical1Column(Model model) {
-		model.addAttribute("activeMenu", "layout");
-		model.addAttribute("activeItem", "vertical-1-column");
+	public String layoutVertical1Column() {
 		return "layout-vertical-1-column";
 	}
 
 	@GetMapping("/layout-vertical-navbar")
-	public String layoutVerticalNavbar(Model model) {
-		model.addAttribute("activeMenu", "layout");
-		model.addAttribute("activeItem", "default");
+	public String layoutVerticalNavbar() {
 		return "layout-vertical-navbar";
 	}
 
